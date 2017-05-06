@@ -1,0 +1,187 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv_af} % a4paper for A4
+
+  
+\usepackage{color}
+%\usepackage[colorlinks=true]{hyperref}
+
+% Command for printing skill progress bars
+\newcommand\skills{ 
+~
+	\smartdiagram[bubble diagram]{
+	\textbf{-System analysis}\\\textbf{ \& Integration},
+        \textbf{~~Algorithm~~}\\\textbf{Engineering},
+        \textbf{Full-Stack}\\\textbf{Development},
+        \textbf{Embedded}\\\textbf{Real-Time SW},
+        \textbf{Backend/DB}\\\textbf{Engineering},
+        %\textbf{~~~~OOP~~~~~},
+        \textbf{Software}\\\textbf{Architecture},                
+        %\textbf{Test}\\\textbf{Automation},
+        \textbf{Statistical}\\\textbf{Analysis}
+    }
+}
+
+\interests{{Software Architecture/4.5},{Sensors \& Signal Processing/5},{Computer Vision/5},{Machine Learning/6}}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{Alex Finkelstein} % Your name
+\cvjobtitle{Algorithm \& SW Engineer\\ multi-stack developer} % Job title/career
+\cvlinkedin{https://www.linkedin.com/in/alex-finkelshtein-46a9341}
+\cvnumberphone{0546339779} % Phone number
+%\cvsite{http://www.hgadgil.com/} % Personal website
+\cvmail{falex123@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+{\textbf{\underline{OBJECTIVE}}: \textit{an opportunity to make a significant R\&D impact on a meaningful and innovative product with a strong, professional growth-oriented team} } 
+
+\section{Professional Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+    	{2016 -}
+		{2017}
+        {Data Scientist}
+        {\href{http://www.medaware.com/}{MedAware}}
+        {}
+        {
+        {\begin{itemize}
+        \item Researching drug prescription vs. patient-profile patterns in medical records, towards intelligent Clinical Decision Support algorithms.	
+        \item Using statistical and ML tools (with \textit{Python-scipy,pandas,sklearn}).        
+	\end{itemize}}
+        }
+    \\   
+    \twentyitem
+   	{2015 -}
+		{2016}
+        {Backend Software Engineer \& Architect}        
+        {\color{blue}  \href{http://www.medaware.com/}{MedAware}}
+        {}
+        {
+        {\begin{itemize}
+        \item Designed and built company's first beta-grade product (\textit{JavaEE /MySQL/Linux}), starting from demo-level code by founder and early hires.
+        \item Deployed at first clinical site \@{\href{https://eng.sheba.co.il/About_Sheba_Medical_Center}{Sheba}}, owned the DevOps till stable.
+        \item Bootstrapped the Software Team by extensive documentation, basic test automation and mentoring 6 new hires.
+        \item Pioneered company-wide integration processes, e.g. Private Data Pipelines, Knowledge Management, Algorithm productization.
+	\end{itemize}}
+        }
+     \\
+     \twentyitem
+   	{2015 	-} {2015}		
+        {Embedded Software and Computer Vision Engineer}
+        {\color{blue}   \href{http://www.prospera.com/}{Prospera}}
+        {}
+        {
+        \begin{itemize}
+        \item Conducted POCs of Computer Vision algorithms (e.g. Local Feature Detection, Optical Flow) on company's agricultural image sequences.
+        \item Developed and productized the Firmware for company's first beta-grade field IoT node (\textit{Python/RPi, C++/ATmega}).
+        \item Contributed to Sys\&HW design, sensors and cameras evaluation.            
+         \end{itemize}
+        }
+      \\
+      \twentyitem
+      {2013 	-} {2015}		
+      {Firmware Researcher, Project\&Team Leader}
+      {{Ministry of Defense}}
+      {}
+      {
+      \begin{itemize}
+      \item Lead POCs, development and productization of firwmare projects, designed dev process, mentored new hires, reviewed team's code.
+      \item Reverse-engineered systems and firmware, developed patches, created custom development platforms for unique projects.      
+      \item Pushed org.-wide efficiency \& knowledge-flow, curated internal Wiki.
+    \end{itemize}
+    	}
+    
+     \\
+      \twentyitem
+      {2010 	-} {2013}		
+      {Embedded Software Developer}
+      {{Ministry of Defense}}
+      {}
+      {
+      \begin{itemize}
+      \item Developed drivers, realtime, business-logic and algorithmic code over a multitude of hardware, OSes, protocols and sensors.
+      \item Designed solutions for special constraints, e.g. scarce resources and closed-source environments (\textit{C++/C/asm}). 
+    \end{itemize}
+    	}
+    	
+    	 \\
+      \twentyitem
+      {2005 	-} {2009}		
+      {Sensors,Signals,Algorithms Engineer (MIL.SERVICE)}
+      {{Ministry of Defense}}
+      {}
+      {
+      \begin{itemize}      
+      \item Worked on sensors development and evaluation, signal processing and registration (\textit{Matlab}), System-level design,simulation\&QA.
+      \item Served in key technical roles (as Algo.Dev., Sys.Eng., QA-lead, respectively) on 3 projects later awarded the Israel Defense Prize {\includegraphics[scale=0.04]{img/trophy.png}}.
+    \end{itemize}
+    	}
+ \end{twenty}
+ 
+
+ 
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+    	{2006-}{2011}       
+        {M.Sc., Physics}
+        {Technion, Haifa, Israel}
+        {Theoretical Biophysics, thesis on a math. model of DNA recombination}
+        {Teaching: Physics1 course Teaching Assistant. ISR \href{http://ipho2017.id/aboutIpho}{IPHO} teams instructor}
+        \\
+	\twentyitem
+    	{2002-}{2005}		
+        {B.A., Mathematics and Physics}
+        {Technion, Haifa, Israel}        
+        {Excellence Program participant. Summa cum laude, first-in-class GPA {\includegraphics[scale=0.04]{img/trophy.png}}}       
+	%%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}	
+	\\
+	%\twentyitem
+    	%{2002}
+        %{High School}
+        %{Aleh Science School, Hertzliya, Israel}        
+        %{First prizes at Israeli Physics\&Chemistry Olympiads {\includegraphics[scale=0.04]{img/trophy.png}}}                           
+        %\\
+\end{twenty}
+	2002 - 1st prizes at ISR Physics\&Chemistry Olympiads for High-School students {\includegraphics[scale=0.04]{img/trophy.png}}   
+
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+
+\end{document} 
